@@ -62,12 +62,70 @@
 // console.log("ok");
 
 
-class User {
-    readonly city:string = "ahmedabad";
+// class User {
+//     // private _courseCount = 1;
+//     protected _courseCount = 1;
+//     readonly city:string = "ahmedabad";
+//     constructor(
+//         public email:string,
+//         public name:string,
+//         private userId:string
+//         ){
+//     }
+//     private deleteToken(){
+//         console.log("Token deleated");
+//     }
+//     get getAppleEmail():string{
+//         return `apple${this.email}`;
+//     }
+//     get courseCount():number {
+//         return this._courseCount;
+//     }
+//     set courseCount(courseNum){
+//         if(courseNum <= 1){
+//             throw new Error("Course count should be more than 1");
+//         }
+//         this._courseCount = courseNum;
+//     }
+// }
+
+// const raj = new User("raj@gmail.com","raj","01");
+// // raj.deleteToken();
+
+// class subClass extends User{
+//     isFamily:boolean = true;
+//     changeCourseCount(){
+//         this._courseCount = 4;
+//     }
+// }
+
+interface Camera{
+    cameraMode:string,
+        filter:string,
+        burst:number
+}
+
+interface story{
+    createStory():void
+}
+
+class Instagram implements Camera{
     constructor(
-        public email:string,
-        public name:string,
-        private userId:string
-        ){
+        public cameraMode:string,
+        public filter:string,
+        public burst:number
+    ){}
+}
+
+class Youtube implements Camera,story{
+    constructor(
+        public cameraMode:string,
+        public filter:string,
+        public burst:number,
+        public short:string
+    ) {}
+
+    createStory(): void {
+        console.log("Youtube shorts created")
     }
 }
