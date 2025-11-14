@@ -99,33 +99,33 @@
 //     }
 // }
 
-interface Camera{
-    cameraMode:string,
-        filter:string,
-        burst:number
-}
+// interface Camera{
+//     cameraMode:string,
+//         filter:string,
+//         burst:number
+// }
 
-interface story{
-    createStory():void
-}
+// interface story{
+//     createStory():void
+// }
 
-class Instagram implements Camera{
-    constructor(
-        public cameraMode:string,
-        public filter:string,
-        public burst:number
-    ){}
-}
+// class Instagram implements Camera{
+//     constructor(
+//         public cameraMode:string,
+//         public filter:string,
+//         public burst:number
+//     ){}
+// }
 
-class Youtube implements Camera,story{
-    constructor(
-        public cameraMode:string,
-        public filter:string,
-        public burst:number,
-        public short:string
-    ) {}
+// class Youtube implements Camera,story{
+//     constructor(
+//         public cameraMode:string,
+//         public filter:string,
+//         public burst:number,
+//         public short:string
+//     ) {}
 
-    createStory(): void {
-        console.log("Youtube shorts created")
-    }
-}
+//     createStory(): void {
+//         console.log("Youtube shorts created")
+//     }
+// }
