@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLoggedinStatus } from '../provider/Loggedin.tsx'
 
-export const UserProfile: React.FC = (props) => {
+export const UserStatus: React.FC = () => {
     const context = useLoggedinStatus();
     return (
         <div className='min-h-screen flex flex-col justify-center items-center'>

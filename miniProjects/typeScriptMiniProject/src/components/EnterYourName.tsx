@@ -11,6 +11,7 @@ const EnterYourName = ()=> {
     const handleFormSubmit = (e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();
         alert("form Submitted");
+        console.log("age: ",age);
         setAge(0);
         setName("");
     }

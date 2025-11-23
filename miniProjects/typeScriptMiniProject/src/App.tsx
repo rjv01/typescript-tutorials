@@ -6,8 +6,7 @@ import FooterPage from "./pages/Footer/FooterPage.tsx";
 import Stopwatch from "./pages/Stopwatch.tsx";
 import TestButton from "./components/TestButton.tsx";
 import EnterYourName from "./components/EnterYourName.tsx";
-// import { UserProfile } from "./components/UserProfile.tsx";
-import { UserProfile } from "./components/userprofile.tsx";
+import { UserStatus } from "./components/UserStatus.tsx";
 import { LoggedinProvider } from "./provider/Loggedin.tsx";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
             // <TestButton text="Decrease" />
           } />
           <Route path="/enteryourname" element={<EnterYourName />} />
-            <Route path="/userprofile" element={<UserProfile />} />
+            <Route path="/userstatus" element={<UserStatus />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
