@@ -8,8 +8,38 @@ import TestButton from "./components/TestButton.tsx";
 import EnterYourName from "./components/EnterYourName.tsx";
 import { UserStatus } from "./components/UserStatus.tsx";
 import { LoggedinProvider } from "./provider/Loggedin.tsx";
+import { Greet } from "./components/Greet.tsx";
+import { Person } from "./components/Person.tsx";
+import { Hero } from "./components/Hero.tsx";
 
 function App() {
+  const personName = {
+    first: 'rjv',
+    last: '01'
+  }
+  const heroList = [
+    {
+      first:'Peter Parker',
+      last:'Spiderman'
+    },
+    {
+      first:'Bruce Wayne',
+      last:'Batman'
+    },
+    {
+      first:'Clark Kent',
+      last:'Superman'
+    },
+    {
+      first:'Steve Rogers',
+      last:'Captain America'
+    },
+    {
+      first:'Logan',
+      last:'Wolverine'
+    }
+    ];
+
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="min-h-svh flex flex-col items-center bg-background text-foreground">
@@ -18,6 +48,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/stopwatch" element={<Stopwatch />} />
+          <Route path="/greet" element={<Greet name = "raj" messageCount={10} />} />
+          <Route path="/person" element={<Person name = { personName } messageCount={111}/>} />
+          <Route path="/heros" element={<Hero names = { heroList } />} />
           <Route path="/testbutton" element={
             // <TestButton onClick={()=>alert("Button CLicked")} text="Click Me" />
             <TestButton text="Increase" />

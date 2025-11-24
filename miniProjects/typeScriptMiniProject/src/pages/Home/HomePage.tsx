@@ -10,9 +10,9 @@ const HomePage: React.FC = () => {
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/testbutton">Counter</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/enteryourname">Enter Your Name</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/userstatus">User Profile</a>
-        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/stopwatch">StopWatch</a>
-        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/stopwatch">StopWatch</a>
-        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/stopwatch">StopWatch</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/greet">Greet</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/person">Person</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/heros">Hero</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/stopwatch">StopWatch</a>
       </div>
     </div>
