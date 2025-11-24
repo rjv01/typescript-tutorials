@@ -8,7 +8,7 @@ type HeroProps={
 export function Hero(props:HeroProps) {
   return (
     <div className='min-h-screen flex flex-col justify-center items-center'>
-        <h1 className="text-4xl">Hero List</h1>
+        <h1 className="text-4xl text-yellow-500 m-5">Hero List</h1>
         <div className='border border-white rounded-lg text-2xl m-3 p-3 '>
         {
             props.names.map(name=>(
