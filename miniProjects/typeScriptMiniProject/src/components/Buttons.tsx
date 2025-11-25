@@ -15,6 +15,7 @@ export default function Buttons(props:ButtonsProps) {
                     className="border p-3 text-2xl italic cursor-pointer duration-150 bg-blue-500 text-white rounded-lg hover:bg-blue-700 m-4">
                     Click Me
                 </button>
+                <p>Check Console Logs</p>
                 <p>{showEvent}</p>
         </div>
     )
