@@ -13,6 +13,7 @@ import { Person } from "./components/Person.tsx";
 import { Hero } from "./components/Hero.tsx";
 import Status from "./components/Status.tsx";
 import Buttons from "./components/Buttons.tsx";
+import Inputs from "./components/Inputs.tsx";
 
 function App() {
   const personName = {
@@ -62,6 +63,7 @@ function App() {
           <Route path="/userstatus" element={<UserStatus />} />
           <Route path="/status" element={<Status status = 'success'/>} />
           <Route path="/buttons" element={<Buttons handleClick={(event)=>(console.log("event: ",event))}/>} />
+          <Route path="/inputs" element={<Inputs value='name'/>} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
