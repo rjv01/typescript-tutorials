@@ -11,6 +11,8 @@ import { LoggedinProvider } from "./provider/Loggedin.tsx";
 import { Greet } from "./components/Greet.tsx";
 import { Person } from "./components/Person.tsx";
 import { Hero } from "./components/Hero.tsx";
+import Status from "./components/Status.tsx";
+import Buttons from "./components/Buttons.tsx";
 
 function App() {
   const personName = {
@@ -57,7 +59,9 @@ function App() {
             // <TestButton text="Decrease" />
           } />
           <Route path="/enteryourname" element={<EnterYourName />} />
-            <Route path="/userstatus" element={<UserStatus />} />
+          <Route path="/userstatus" element={<UserStatus />} />
+          <Route path="/status" element={<Status status = 'success'/>} />
+          <Route path="/buttons" element={<Buttons handleClick={(event)=>(console.log("event: ",event))}/>} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
