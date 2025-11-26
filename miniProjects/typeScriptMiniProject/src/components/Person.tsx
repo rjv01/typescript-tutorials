@@ -1,10 +1,5 @@
-type PersonProps={
-    name:{
-        first:string,
-        last:string
-    },
-    messageCount?:number
-}
+import type { PersonProps } from "./Person.types";
+
 export function Person(props:PersonProps) {
   return (
     <div className='min-h-screen flex justify-center items-center'>
