@@ -15,6 +15,7 @@ import Status from "./components/Status.tsx";
 import Buttons from "./components/Buttons.tsx";
 import Inputs from "./components/Inputs.tsx";
 import StypePropss from "./components/StypePropss.tsx";
+import LoggedIn from "./components/LoggedIn.tsx";
 
 function App() {
   const personName = {
@@ -67,7 +68,7 @@ function App() {
           <Route path="/inputs" element={<Inputs value='name'/>} />
           <Route path="/stylepropss" element={
             <StypePropss 
-              styles = { { 
+            styles = { { 
                 border:'1px solid grey',
                 borderRadius:'15px',
                 padding:'1rem',
@@ -76,8 +77,9 @@ function App() {
                 margin:'10px',
               }}
               onClick={()=>alert("kessa hai bhai?")}
-            />} 
+              />} 
           />
+        <Route path="/loggedin" element={<LoggedIn />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
