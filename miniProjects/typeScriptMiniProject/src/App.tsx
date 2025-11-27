@@ -16,6 +16,7 @@ import Buttons from "./components/Buttons.tsx";
 import Inputs from "./components/Inputs.tsx";
 import StypePropss from "./components/StypePropss.tsx";
 import LoggedIn from "./components/LoggedIn.tsx";
+import User from "./components/User.tsx";
 
 function App() {
   const personName = {
@@ -80,6 +81,7 @@ function App() {
               />} 
           />
         <Route path="/loggedin" element={<LoggedIn />} />
+        <Route path="/users" element={<User />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
