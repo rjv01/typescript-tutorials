@@ -19,6 +19,7 @@ const HomePage: React.FC = () => {
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/stylepropss">Style props</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/loggedin">LoggedIn</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/users">Users</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/box">Box</a>
       </div>
     </div>
 

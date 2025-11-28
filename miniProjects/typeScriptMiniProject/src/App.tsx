@@ -17,6 +17,8 @@ import Inputs from "./components/Inputs.tsx";
 import StypePropss from "./components/StypePropss.tsx";
 import LoggedIn from "./components/LoggedIn.tsx";
 import User from "./components/User.tsx";
+import { ThemeContextProvider } from "./components/context/ThemeContext.tsx";
+import Box from "./components/context/Box.tsx";
 
 function App() {
   const personName = {
@@ -82,6 +84,13 @@ function App() {
           />
         <Route path="/loggedin" element={<LoggedIn />} />
         <Route path="/users" element={<User />} />
+        <Route 
+          path="/box" 
+          element={
+            <ThemeContextProvider>
+              <Box />
+            </ThemeContextProvider>
+          } />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
