@@ -19,6 +19,7 @@ import LoggedIn from "./components/LoggedIn.tsx";
 import User from "./components/User.tsx";
 import { ThemeContextProvider } from "./components/context/ThemeContext.tsx";
 import Box from "./components/context/Box.tsx";
+import MutableDom from "./components/Ref/MutableDom.tsx";
 
 function App() {
   const personName = {
@@ -91,6 +92,7 @@ function App() {
               <Box />
             </ThemeContextProvider>
           } />
+        <Route path="/timer" element={<MutableDom />}/>
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
