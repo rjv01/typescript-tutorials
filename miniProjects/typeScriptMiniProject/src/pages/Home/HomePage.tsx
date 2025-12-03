@@ -21,6 +21,7 @@ const HomePage: React.FC = () => {
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/users">Users</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/box">Box</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/timer">Timer</a>
+        <a className='text-blue-400 hover:text-white hover:bg-linear-to-b from-red-500 via-purple-500 to-blue-500 w-full text-xl p-3 m-2 border duration-200' href="/cinema">Cinematography</a>
       </div>
     </div>
 

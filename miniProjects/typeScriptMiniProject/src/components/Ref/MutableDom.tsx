@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 export default function MutableDom() {
     const [timer,setTimer] = useState(0);

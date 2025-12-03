@@ -20,6 +20,8 @@ import User from "./components/User.tsx";
 import { ThemeContextProvider } from "./components/context/ThemeContext.tsx";
 import Box from "./components/context/Box.tsx";
 import MutableDom from "./components/Ref/MutableDom.tsx";
+import Cinema from "./components/Cinema.tsx";
+import Callback from "./pages/Callback";
 
 function App() {
   const personName = {
@@ -93,6 +95,8 @@ function App() {
             </ThemeContextProvider>
           } />
         <Route path="/timer" element={<MutableDom />}/>
+        <Route path="/cinema" element={<Cinema />}/>
+        <Route path="/callback" element={<Callback />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
