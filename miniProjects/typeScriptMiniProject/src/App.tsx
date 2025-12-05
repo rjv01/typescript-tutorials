@@ -22,6 +22,7 @@ import Box from "./components/context/Box.tsx";
 import MutableDom from "./components/Ref/MutableDom.tsx";
 import Cinema from "./components/Cinema.tsx";
 import Callback from "./pages/Callback";
+import TextEditor from "./components/TextEditor.tsx";
 
 function App() {
   const personName = {
@@ -97,6 +98,7 @@ function App() {
         <Route path="/timer" element={<MutableDom />}/>
         <Route path="/cinema" element={<Cinema />}/>
         <Route path="/callback" element={<Callback />} />
+        <Route path="/texteditor" element={<TextEditor />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
