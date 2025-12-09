@@ -23,6 +23,7 @@ import MutableDom from "./components/Ref/MutableDom.tsx";
 import Cinema from "./components/Cinema.tsx";
 import Callback from "./pages/Callback";
 import TextEditor from "./components/TextEditor.tsx";
+import Cards from "./components/Cards.tsx";
 
 function App() {
   const personName = {
@@ -99,6 +100,7 @@ function App() {
         <Route path="/cinema" element={<Cinema />}/>
         <Route path="/callback" element={<Callback />} />
         <Route path="/texteditor" element={<TextEditor />} />
+        <Route path="/cards" element={<Cards />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
