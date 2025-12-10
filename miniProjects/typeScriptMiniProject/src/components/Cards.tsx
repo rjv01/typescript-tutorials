@@ -13,15 +13,9 @@ type Food = {
 const Cards = () => {
     const [userData,setUserData] = useState<Food>();
     const [loading,setLoading] = useState(false);
-    const [count,setCount] = useState(0);
 
     const fetchData = async ()=>{
         setLoading(true);
-        setCount(prev =>{
-            const rand = Math.floor(Math.random()*10);
-            return prev === rand ? 0 : prev+1;
-        });
-
         try {
             const respsonse = await axios.get("https://dummyjson.com/recipes");
             
@@ -44,15 +38,6 @@ const Cards = () => {
 
     return (
         <div className="min-h-screen flex flex-col justify-center items-center">
-            {
-                count !== 0 && (
-                    <img 
-                        src="./rubbingHands.jpg" 
-                        alt="img"
-                        className="h-[120px] w-[120px] rounded-full m-2"
-                    />
-                )
-            }
             <h1 className="text-2xl font-mono text-red-600 animate-caret-blink mb-5">Fetching random stuff from the internet</h1>
             <div className="border-2 rounded-lg p-8 m-4 h-[600px] w-[555px]">
                 {
@@ -97,11 +82,11 @@ const Cards = () => {
                                             </ul>
                                         ))}
                                     </div>
-                                    <div className="flex justify-center border-2 m-6 rounded-2xl ">
+                                    <div className="flex justify-center m-6 rounded-2xl ">
                                         <img 
                                             src={userData.image} 
                                             alt="img"
-                                            className="h-[300px] w-[300px] rounded-2xl p-3"
+                                            className="h-[250px] w-[250px] rounded-2xl p-3"
                                         />
                                     </div>
                                 </div>
