@@ -24,6 +24,10 @@ const HomePage: React.FC = () => {
         <a className='text-blue-400 hover:text-white hover:bg-linear-to-b from-red-500 via-purple-500 to-blue-500 w-full text-xl p-3 m-2 border duration-200' href="/cinema">Cinematography</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/texteditor">Text Editor</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' href="/cards">Cards</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' 
+        href="/paginationpage">Pagination Page</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' 
+        href="/usercards">User Cards</a>
       </div>
     </div>
 

@@ -24,6 +24,8 @@ import Cinema from "./components/Cinema.tsx";
 import Callback from "./pages/Callback";
 import TextEditor from "./components/TextEditor.tsx";
 import Cards from "./components/Cards.tsx";
+import PaginationPage from "./components/PaginationPage.tsx";
+import UserCards from "./components/UserCards.tsx";
 
 function App() {
   const personName = {
@@ -101,6 +103,8 @@ function App() {
         <Route path="/callback" element={<Callback />} />
         <Route path="/texteditor" element={<TextEditor />} />
         <Route path="/cards" element={<Cards />} />
+        <Route path="/paginationpage" element={<PaginationPage />} />
+        <Route path="/usercards" element={<UserCards />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
