@@ -26,6 +26,7 @@ import TextEditor from "./components/TextEditor.tsx";
 import Cards from "./components/Cards.tsx";
 import PaginationPage from "./components/PaginationPage.tsx";
 import UserCards from "./components/UserCards.tsx";
+import ShadCnCalendar from "./components/ShadCnCalendar.tsx";
 
 function App() {
   const personName = {
@@ -105,6 +106,7 @@ function App() {
         <Route path="/cards" element={<Cards />} />
         <Route path="/paginationpage" element={<PaginationPage />} />
         <Route path="/usercards" element={<UserCards />} />
+        <Route path="/shadcncalendar" element={<ShadCnCalendar />} />
         </Routes>
         {/* <TestButton text="Increase" />
         <TestButton text="Decrease" /> */}
