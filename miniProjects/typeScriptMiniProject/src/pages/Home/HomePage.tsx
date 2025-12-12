@@ -30,6 +30,8 @@ const HomePage: React.FC = () => {
         href="/usercards">User Cards</a>
         <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' 
         href="/shadcncalendar">ShadCn Calendar</a>
+        <a className='text-blue-400 hover:text-blue-900 text-xl p-3 m-2 border' 
+        href="/responsivepage">Responsive Pager</a>
       </div>
     </div>
 
